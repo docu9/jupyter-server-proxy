@@ -10,7 +10,7 @@ import shutil
 def setup_theia():
     # Make sure theia is in $PATH
     def _theia_command(port):
-        THEIA_PATH = os.getenv('THEIA_PATH')
+        THEIA_PATH = os.environ['THEIA_PATH']
         # full_path = shutil.which('theia')
         # if not full_path:
         #     raise FileNotFoundError('Can not find theia executable in $PATH')
